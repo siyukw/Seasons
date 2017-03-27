@@ -9,7 +9,7 @@ public class Seasons {
         System.out.println("Which month is your favorite month?");
         int month = userInput.nextInt();
         int season = whichSeason(month);
-
+        SeasonObject s = new SeasonObject(season);
     }
 
     public static int whichSeason(int month) {
