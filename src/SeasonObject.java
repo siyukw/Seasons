@@ -12,13 +12,13 @@ public class SeasonObject {
         Graphics g = p.getGraphics();
         this.season = season;
         if (season == 1) {
-            sColor = new Color(125, 180, 36);
+            sColor = new Color(139, 180, 40);
         } else if (season == 2) {
             sColor = new Color(22, 100, 31);
         } else if (season == 3) {
             sColor = new Color(158, 84, 34);
         } else {
-            sColor = Color.white;
+            sColor = new Color(168, 220, 226);
         }
     }
 
