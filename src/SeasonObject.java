@@ -32,7 +32,11 @@ public class SeasonObject {
         g.setColor(sColor);
         g.fillRect(0, 600, 1200, 200);
         tree(50, 500, 100);
-        tree(600, 400, 200);
+        tree(1000, 400, 200);
+        tree(500, 200, 350);
+        tree(300, 300, 300);
+        tree(750, 450, 150);
+        tree(800, 400, 220);
     }
 
     private void tree(int x, int y, int size) {
