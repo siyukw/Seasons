@@ -15,29 +15,33 @@ public class SeasonObject {
         this.season = season;
         if (season == 1) {
             sColor = new Color(139, 180, 40);
-            oColor = new Color(139, 180, 40);
+            oColor = new Color(79, 180, 43);
         } else if (season == 2) {
             sColor = new Color(22, 100, 31);
+            oColor = new Color(3, 70, 4);
         } else if (season == 3) {
-            sColor = new Color(158, 84, 34);
+            sColor = new Color(158, 58, 8);
+            oColor = new Color(180, 124, 11);
         } else {
             sColor = new Color(168, 220, 226);
+            oColor = new Color(211, 255, 241);
         }
         p.setBackground(new Color(118, 184, 200));
         g.setColor(new Color(158, 8, 17));
         g.fillOval(50, 50, 70, 70);
         g.setColor(sColor);
         g.fillRect(0, 600, 1200, 200);
-        tree()
+        tree(50, 500, 100);
+        tree(600, 400, 200);
     }
 
-    private void tree(int x, int y, int size, Color c) {
-        g.setColor(c);
+    private void tree(int x, int y, int size) {
+        g.setColor(oColor);
         g.fillOval(x, y, size, size);
         g.setColor(new Color(56, 18, 0));
-        g.fillRect(x + size / 3, y + 2 * size / 3, size / 3, size);
-        g.fillRect(x + size / 3, y + size / 3, size / 9, size/3);
-        g.fillRect(x + 2 * size / 3, y + size / 3, size / 9, size/3);
+        g.fillRect(x + size / 3, y + 2 * size / 3, size / 3, size * 2 / 3);
+        g.fillRect(x + size / 3, y + size / 3, size / 9, size);
+        g.fillRect(x + 5 * size / 9, y + size / 3, size / 9, size);
     }
 
 
