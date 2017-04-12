@@ -38,6 +38,11 @@ public class SeasonObject {
         tree(300, 300, 300);
         tree(750, 450, 150);
         tree(800, 400, 220);
+        
+        // if winter, snowflakes
+        if(season == 4) {
+            snowFlake(200, 300, 50);
+        }
     }
 
     private void tree(int x, int y, int size) {
@@ -47,6 +52,11 @@ public class SeasonObject {
         g.fillRect(x + size / 3, y + 2 * size / 3, size / 3, size * 2 / 3);
         g.fillRect(x + size / 3, y + size / 3, size / 9, size);
         g.fillRect(x + 5 * size / 9, y + size / 3, size / 9, size);
+    }
+
+    private void snowFlake(int x, int y, int size) {
+        g.setColor(Color.WHITE);
+        // finish snowflakes
     }
 
 
